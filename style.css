@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Oswald';
     /*Titulos*/
-    src: url('fonts/oswald-regular.ttf') format('truetype');
+    src: url(fonts/oswald-regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto';
     /*Texto bold*/
-    src: url('fonts/roboto-bold.ttf') format('truetype');
+    src: url(fonts/roboto-bold.ttf) format('truetype');
     font-weight: 700;
 }
 
