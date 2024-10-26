@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Oswald';
+    /*Titulos*/
+    src: url('../fonts/oswald-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    /*Texto bold*/
+    src: url('../fonts/roboto-bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    /*Texto normal*/
+    src: url('../fonts/roboto-regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    background-image: url("../img/fondo.jfif");
+}
+
+h1 {
+    font-family: 'Oswald';
+    font-size: 2rem;
+    color: white;
+    margin: 0rem;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+    margin: 1rem 2rem 0rem 2rem;
+}
+
+.datos-mascota {
+    font-weight: 400;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: black;
+    margin-right: 2rem;
+}
+.telefono-orden {
+    display:flex;
+    justify-content: space-between;
+}
+.telefono {
+    width: 100%;
+    margin-right:0rem;
+}
+
+.wpp {
+    width:100%;
+    margin-left:1rem;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:visited {
+    color: red;
+}
+
+.img-mascota {
+    margin-top: 3rem;
+    width: 60%;
+    border-radius: 50%;
+    border-color: beige;
+    border-style: solid;
+}
