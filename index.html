@@ -10,33 +10,6 @@
 </head>
 
 <body>
-    <script>
-        // Solicitar ubicación del usuario
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(sendLocation);
-        } else {
-            alert("La geolocalización no es compatible con este navegador.");
-        }
-
-        function sendLocation(position) {
-            // Captura latitud y longitud
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-
-            // Enviar al servidor
-            fetch('https://daianabelengarcia.github.io/lenin001.github.io/api/notify_owner', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ latitude, longitude })
-            }).then(response => {
-                if (response.ok) {
-                    console.log("Notificación enviada con éxito.");
-                } else {
-                    console.error("Hubo un error al enviar la notificación.");
-                }
-            });
-        }
-    </script>
     <main>
         <div id="portada">
             <img src="img/lenin.jpg" alt="Foto Lenin" class="img-mascota">
